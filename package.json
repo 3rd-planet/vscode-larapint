@@ -1,9 +1,9 @@
 {
     "name": "laravel-pint-vscode",
     "displayName": "Laravel Pint Formatter",
-    "description": "vscode extension for laravel pint with zero config",
+    "description": "vscode extension for laravel pint with zero config and optional format on save option.",
     "publisher": "msamgan",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "icon": "larapint-icon.png",
     "engines": {
         "vscode": "^1.68.0"
@@ -46,7 +46,7 @@
                     "command": "laravel-pint-vscode.format-file",
                     "alt": "laravel-pint-vscode.format-file",
                     "group": "1_modification"
-                  }
+                }
             ]
         },
         "keybindings": [
