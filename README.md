@@ -38,4 +38,16 @@ This will **format the current open file** with the set configurations you provi
 
 PS: A system pop up will ask you to install pint if it's not installed.
 
+## Setting (Format on Save)
+
+**This setting is entirely optional**
+
+if you would like to unable format on save. Add the following line to the `settings.json`
+
+```json
+"editor.laravel.pint.enabled": true
+```
+
+This will unable pint format on save for the current file.
+
 **Enjoy!**
