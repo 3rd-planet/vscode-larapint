@@ -104,6 +104,10 @@ exports.formatProject = async () => {
     )
 }
 
+/**
+ * Copies the pint.json file to the root of your project.           
+ * @returns None           
+ */
 exports.copyPintJsonToRoot = async () => {
     if (!checkBinaryExist()) {
         return await vscode.window
