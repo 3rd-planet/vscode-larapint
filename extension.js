@@ -26,7 +26,14 @@ function activate(context) {
     context.subscriptions.push(
         vscode.workspace.onWillSaveTextDocument(async (event) => {
             if (event.document.fileName.endsWith(".php")) {
-                await formatCurrentFile(false)
+                let allConfig = JSON.parse(JSON.stringify(await vscode.workspace.getConfiguration()))
+                try {
+                    if (allConfig.editor.laravel.pint.enabled) {
+                        await formatCurrentFile(false)
+                    }
+                } catch (e) {
+                    // console.log(e)
+                }
             }
         })
     )
