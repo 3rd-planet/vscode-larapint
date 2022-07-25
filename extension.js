@@ -22,6 +22,14 @@ function activate(context) {
             copyPintJsonToRoot()
         })
     )
+
+    context.subscriptions.push(
+        vscode.workspace.onWillSaveTextDocument(async (event) => {
+            if (event.document.fileName.endsWith(".php")) {
+                await formatCurrentFile(false)
+            }
+        })
+    )
 }
 
 // this method is called when your extension is deactivated
