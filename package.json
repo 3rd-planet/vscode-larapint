@@ -3,7 +3,7 @@
     "displayName": "Laravel Pint Formatter",
     "description": "vscode extension for laravel pint with zero config and optional format on save option.",
     "publisher": "msamgan",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "icon": "larapint-icon.png",
     "engines": {
         "vscode": "^1.68.0"

@@ -79,7 +79,7 @@ exports.installPint = async () => {
  */
 exports.runCommand = async (command, directory, successMessage, showNotification = true) => {
     cp.exec(
-        command,
+        "php " + command,
         {
             cwd: directory
         },
