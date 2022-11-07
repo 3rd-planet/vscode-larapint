@@ -59,7 +59,9 @@ exports.installPint = async () => {
                     // eslint-disable-next-line no-unused-vars
                     (err, stdout, stderr) => {
                         if (err) {
-                            return this.errorMessage("Something went wrong while running Laravel Pint.")
+                            return this.errorMessage(
+                                "Something went wrong while running Laravel Pint." + stdout
+                            )
                         } else {
                             return this.infoMessage("Installation complete...")
                         }
@@ -86,7 +88,7 @@ exports.runCommand = async (command, directory, successMessage, showNotification
         // eslint-disable-next-line no-unused-vars
         (err, stdout, stderr) => {
             if (err) {
-                return this.errorMessage("Something went wrong while running Laravel Pint.")
+                return this.errorMessage("Something went wrong while running Laravel Pint" + stdout)
             } else {
                 if (showNotification) {
                     return this.infoMessage(successMessage)
