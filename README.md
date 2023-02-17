@@ -1,8 +1,8 @@
-# vscode laravel pint formatter extension
+# VSCode Laravel Pint Formatter Extension
 
-vscode extension for laravel pint. For details follow the official documentation of [laravel/pint](https://github.com/laravel/pint)
+VSCode extension for Laravel Pint. For details follow the official documentation of [laravel/pint](https://github.com/laravel/pint)
 
-Just install and get started.
+Just install to get started.
 
 **NO ADDITION CONFIGURATION REQUIRED**
 
@@ -12,7 +12,7 @@ Just install and get started.
 ext install msamgan.laravel-pint-vscode
 ```
 
-or you can also install by searching "pint" in vscode extensions and selecting "Laravel Pint Formatter" from "Mohammed Samgan khan"
+or you can also install by searching `pint` in VSCode extensions and selecting `Laravel Pint Formatter` from `Mohammed Samgan khan`
 
 ## Usage
 
@@ -42,12 +42,12 @@ PS: A system pop up will ask you to install pint if it's not installed.
 
 **This setting is entirely optional**
 
-if you would like to unable format on save. Add the following line to the `settings.json`
+if you would like to enable format on save. Add the following line to the `settings.json`
 
 ```json
 "editor.laravel.pint.enabled": true
 ```
 
-This will unable pint format on save for the current file.
+Pint will format the current file each time it is saved.
 
 **Enjoy!**
